@@ -3,12 +3,13 @@
 import { useMemo, useState } from "react";
 
 import useRentModal from "@/app/hooks/useRentModal"
-import Modal from "./Modal"
+import { FieldValues, useForm } from "react-hook-form";
 import { CATEGORIES } from '../navbar/Categories'
 
+import Modal from "./Modal"
 import Heading from "../Heading";
 import CategoryInput from "../inputs/CategoryInput";
-import { FieldValues, useForm } from "react-hook-form";
+import CountrySelect from "../inputs/CountrySelect";
 
 enum STEPS {
     CATETGORY = 0,
@@ -101,11 +102,22 @@ const RentModal = () => {
         </div>
     )
 
+    if (step === STEPS.LOCATION) {
+        bodyContent = (
+            <div className="flex flex-col gap-8">
+                <Heading
+                    title="Where is your place located?"
+                    subtitle="Help guests find you!" />
+                <CountrySelect />
+            </div>
+        )
+    }
+
     return (
         <Modal
             isOpen={rentModal.isOpen}
             onClose={rentModal.onClose}
-            onSubmit={rentModal.onClose}
+            onSubmit={onNext}
             actionLabel={actionLabel}
             secondaryActionLabel={secondaryActionLabel}
             secondatyAction={step === STEPS.CATETGORY ? undefined : onBack}
