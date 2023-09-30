@@ -18,7 +18,7 @@ const useCountries = () => {
     return {
         getAll,
         getByValue
-    }
+    } 
 }
 
 export default useCountries
