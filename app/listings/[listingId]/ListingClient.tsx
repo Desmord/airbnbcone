@@ -1,6 +1,6 @@
 'use client'
 
-import { SafeListing, SafeUser } from "@/app/types"
+import { SafeListing, SafeReservation, SafeUser } from "@/app/types"
 import { CATEGORIES } from '@/app/components/navbar/Categories'
 import { Reservation } from "@prisma/client"
 import { useCallback, useEffect, useMemo, useState } from "react"
@@ -28,7 +28,7 @@ type ListingClientProps = {
         user: SafeUser
     },
     currentUser?: SafeUser | null,
-    reservations?: Reservation[],
+    reservations?: SafeReservation[],
 }
 
 const ListingClient: React.FC<ListingClientProps> = ({
