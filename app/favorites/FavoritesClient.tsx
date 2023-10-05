@@ -6,7 +6,7 @@ import ListingCard from "../components/listings/ListingCard"
 import { SafeListing, SafeUser } from "../types"
 
 type FavoritesClientProps = {
-    listings: SafeListing[],
+    listings: any,
     currentUser: SafeUser | null
 }
 
@@ -23,7 +23,7 @@ const FavoritesClient: React.FC<FavoritesClientProps> = ({
             <div className="
                 mt-10 grid-cols-1 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4
                 xl:grid-cols-5 2xl:grid-cols-6 gap-8">
-                {listings.map((listing) => {
+                {listings.map((listing: SafeListing) => {
                     return (
                         <ListingCard
                             currentUser={currentUser}
