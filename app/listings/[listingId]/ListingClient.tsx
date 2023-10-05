@@ -23,7 +23,7 @@ const initialDateRange = {
 }
 
 type ListingClientProps = {
-    listing: SafeListing & {
+    listing: any & {
         user: SafeUser
     },
     currentUser?: SafeUser | null,
