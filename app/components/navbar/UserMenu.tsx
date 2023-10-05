@@ -2,7 +2,7 @@
 
 import { SafeUser } from '@/app/types';
 import { useState, useCallback } from 'react'
-import { AiOutlineMenu } from 'react-icons/Ai'
+import { AiOutlineMenu } from 'react-icons/ai'
 import { signOut } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 
