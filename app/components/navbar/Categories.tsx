@@ -30,77 +30,52 @@ export const CATEGORIES: categoriesType[] = [
     {
         label: `Beach`,
         icon: TbBeach,
-        description: `This property exist Beach.`
-    },
-    {
-        label: `Windmills`,
-        icon: GiWindmill,
-        description: `This property exist Windmills.`
+        description: ``
     },
     {
         label: `Modern`,
         icon: MdOutlineVilla,
-        description: `This property exist Modern.`
+        description: ``
     },
     {
         label: `Countyside`,
         icon: TbMountain,
-        description: `This property exist Countryside.`
+        description: ``
     },
     {
         label: `Pools`,
         icon: TbPool,
-        description: `This property exist Pools.`
-    },
-    {
-        label: `Islands`,
-        icon: GiIsland,
-        description: `This property exist Islands.`
+        description: ``
     },
     {
         label: `Lake`,
         icon: GiBoatFishing,
-        description: `This property exist lake.`
-    },
-    {
-        label: `Skiing`,
-        icon: FaSkiing,
-        description: `This property exist Skiing.`
+        description: ``
     },
     {
         label: `Castles`,
         icon: GiCastle,
-        description: `This property is in a castle.`
-    },
-    {
-        label: `Camping`,
-        icon: GiForestCamp,
-        description: `This property  has camping activities.`
-    },
-    {
-        label: `Arctic`,
-        icon: BsSnow,
-        description: `This property has camping activities.`
+        description: ``
     },
     {
         label: `Cave`,
         icon: GiCaveEntrance,
-        description: `This property is in a Cave.`
+        description: ``
     },
     {
         label: `Desert`,
         icon: GiCactus,
-        description: `This property is in a Desert.`
+        description: ``
     },
     {
         label: `Barns`,
         icon: GiBarn,
-        description: `This property is in a Barn.`
+        description: ``
     },
     {
         label: `Lux`,
         icon: IoDiamond,
-        description: `This property is Luxurious.`
+        description: ``
     },
 ]
 
